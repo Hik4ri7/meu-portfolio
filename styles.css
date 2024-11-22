@@ -44,7 +44,7 @@ li {
     margin: 10px 0;
 }
 
-/* Passo 1: Definindo a animação no CSS */
+/* Passo 1: Definindo a animação fadeIn */
 @keyframes fadeIn {
     0% {
         opacity: 0; /* Inicialmente invisível */
@@ -54,7 +54,19 @@ li {
     }
 }
 
-/* Passo 2: Aplicando a animação no elemento */
+/* Passo 2: Aplica a animação no título ou outros elementos */
 .fade-in {
     animation: fadeIn 2s ease-in-out; /* Animação com duração de 2 segundos */
+}
+
+/* Outros estilos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1 {
+    font-size: 36px;
+    color: #4CAF50;
 }
