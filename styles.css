@@ -43,3 +43,18 @@ ul {
 li {
     margin: 10px 0;
 }
+
+/* Passo 1: Definindo a animação no CSS */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Inicialmente invisível */
+    }
+    100% {
+        opacity: 1; /* Fica totalmente visível */
+    }
+}
+
+/* Passo 2: Aplicando a animação no elemento */
+.fade-in {
+    animation: fadeIn 2s ease-in-out; /* Animação com duração de 2 segundos */
+}
