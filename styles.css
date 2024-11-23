@@ -70,3 +70,32 @@ h1 {
     font-size: 36px;
     color: #f4f4f4;
 }
+
+/* Definindo a animação de digitação */
+@keyframes typing {
+    0% {
+        width: 0; /* Começa com largura 0 (texto invisível) */
+    }
+    100% {
+        width: 100%; /* Aumenta para 100% (texto totalmente visível) */
+    }
+}
+
+/* Estilos do texto */
+.typing-effect {
+    font-size: 24px;
+    font-family: "Courier New", Courier, monospace; /* Fontes que simulam digitação */
+    color: white; /* Cor do texto */
+    overflow: hidden; /* Impede o texto de ultrapassar o limite */
+    white-space: nowrap; /* Impede a quebra de linha */
+    border-right: 4px solid #fff; /* Cria um cursor de digitação à direita */
+    width: 0; /* Começa com largura 0 */
+    animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite; /* Define o tempo da digitação e o cursor piscando */
+}
+
+/* Efeito de "blinking cursor" (o cursor piscando) */
+@keyframes blink {
+    50% {
+        border-color: transparent; /* Faz o cursor desaparecer */
+    }
+}
