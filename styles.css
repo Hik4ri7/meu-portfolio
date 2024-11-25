@@ -84,7 +84,7 @@ h1 {
 /* Estilos do texto */
 .typing-effect {
     font-size: 24px;
-    font-family: "Courier New", Courier, monospace; /* Fontes que simulam digitação */
+    font-family: Arial, sans-serif; /* Fontes que simulam digitação */
     color: white; /* Cor do texto */
     overflow: hidden; /* Impede o texto de ultrapassar o limite */
     white-space: nowrap; /* Impede a quebra de linha */
